@@ -6,7 +6,7 @@ import { navbar } from "../../pages/components/navbar"
 import { loginPage } from "../../pages/loginPage"
 import { User } from "../../types/user"
 
-describe('Navbar tests', () => {
+describe('Navbar testss', () => {
     let user: User
 
     beforeEach(() => {
