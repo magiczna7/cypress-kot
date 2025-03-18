@@ -17,12 +17,15 @@ describe('Login page tests in isolation', () => {
         loginMocks.mockSuccess(user)
         cartMocks.mockCartWithNItems(user.username, 2)
         meMocks.mockSuccess(user)
+        cy.get('#username').should('be.visible')
+        cy.percySnapshot('Login Page')
 
         // when
         loginPage.attemptLogin(user.username, user.password)
 
         // then
         cy.get('.mt-1').should('have.text', user.email)
+        cy.percySnapshot('Login Page')
     })
 
     it('should fail to login', () => {
