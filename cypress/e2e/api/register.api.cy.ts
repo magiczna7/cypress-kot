@@ -4,7 +4,7 @@ import { getRandomUser } from "../../generators/userGenerator"
 import { Roles } from "../../types/roles"
 import { BACKEND_URL } from "../../utils/constants"
 
-describe('Register API tests', { env: { snapshotOnly: false } }, () => {
+describe('Register API tests', () => {
     it('should successfully register user', () => {
         // given
         const user = getRandomUser()
