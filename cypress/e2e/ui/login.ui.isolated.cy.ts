@@ -15,7 +15,7 @@ describe('Login page tests in isolation', () => {
         // given
         const user = getRandomUser()
         loginMocks.mockSuccess(user)
-        cartMocks.mockCartWithNItems(user.username, 2)
+        cartMocks.mockCartWithNItems(user.username, 1)
         meMocks.mockSuccess(user)
         cy.get('#username').should('be.visible')
         cy.percySnapshot('Login Page')
