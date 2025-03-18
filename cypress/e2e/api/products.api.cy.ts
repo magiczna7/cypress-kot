@@ -3,7 +3,7 @@
 import { getRandomUser } from "../../generators/userGenerator"
 import { BACKEND_URL } from "../../utils/constants"
 
-describe('GET Products API tests', { env: { snapshotOnly: false } }, () => {
+describe('GET Products API testss', { env: { snapshotOnly: false } }, () => {
     it('should successfully get products', () => {
         // given
         const user = getRandomUser()
